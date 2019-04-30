@@ -7,4 +7,7 @@
 (set-face-font 'default "WenQuanYi Zen Hei Mono-12")
 (setq split-width-threshold 120)
 
+(package-install 'which-key)
+(which-key-mode 1)
+
 (provide 'init-misc)
