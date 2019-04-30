@@ -1,6 +1,7 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'init-prelude)
+(require 'init-helm)
 (require 'init-misc)
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
