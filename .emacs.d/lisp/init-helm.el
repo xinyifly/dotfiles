@@ -16,4 +16,7 @@
              (define-key eshell-mode-map
                (kbd "C-c C-l") 'helm-eshell-history)))
 
+(package-install 'helm-projectile)
+(helm-projectile-on)
+
 (provide 'init-helm)

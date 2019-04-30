@@ -10,4 +10,9 @@
 (package-install 'which-key)
 (which-key-mode 1)
 
+(package-install 'projectile)
+(setq projectile-use-git-grep t)
+(projectile-mode 1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 (provide 'init-misc)
