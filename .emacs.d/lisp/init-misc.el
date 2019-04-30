@@ -15,4 +15,11 @@
 (projectile-mode 1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+(package-install 'magit)
+(setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
+(setq magit-diff-refine-hunk t)
+(setq magit-delete-by-moving-to-trash nil)
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch)
+
 (provide 'init-misc)
