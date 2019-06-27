@@ -7,6 +7,9 @@
 (global-set-key (kbd "C-;") 'avy-goto-char-timer)
 (global-set-key (kbd "M-g g") 'avy-goto-line)
 
+(package-install 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
 (package-install 'yasnippet)
 (setq yas-triggers-in-field t)
 (yas-global-mode 1)
@@ -16,6 +19,12 @@
 (require 'smartparens-config)
 (setq sp-highlight-pair-overlay nil)
 (smartparens-global-mode 1)
+
+(package-install 'symbol-overlay)
+(global-set-key (kbd "M-i") 'symbol-overlay-put)
+(global-set-key (kbd "M-I") 'symbol-overlay-remove-all)
+(global-set-key (kbd "M-n") 'symbol-overlay-jump-next)
+(global-set-key (kbd "M-p") 'symbol-overlay-jump-prev)
 
 (package-install 'multiple-cursors)
 (require 'mc-mark-more)
