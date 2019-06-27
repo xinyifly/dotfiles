@@ -2,6 +2,7 @@
 
 (require 'init-prelude)
 (require 'init-edit)
+(require 'init-lang)
 (require 'init-helm)
 (require 'init-misc)
 (require 'init-postlude)
