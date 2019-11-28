@@ -27,6 +27,10 @@
 (package-install 'rubocopfmt)
 (add-hook 'ruby-mode-hook 'rubocopfmt-mode)
 
+(require 'inf-ruby)
+(setq inf-ruby-default-implementation "pry")
+(define-key inf-ruby-minor-mode-map (kbd "C-c C-l") 'ruby-send-line)
+
 ;; Misc
 (package-install 'nix-mode)
 (package-install 'yaml-mode)
