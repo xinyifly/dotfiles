@@ -24,7 +24,8 @@
 (setq coffee-tab-width 2)
 
 ;; Ruby
-(package-install 'rubocop)
+(package-install 'rubocopfmt)
+(add-hook 'ruby-mode-hook 'rubocopfmt-mode)
 
 ;; Misc
 (package-install 'nix-mode)
